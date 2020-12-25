@@ -33,7 +33,7 @@ CordovaWebsocketPlugin.wsConnect(
     console.log(`Connected to WebSocket with id: ${success.webSocketId}`);
   },
   error => { // CordovaWebsocketError
-    console.log(`Failed to connect to WebSocket: code: ${error?.code}, reason: ${error?.reason}`, error?.exception)
+    console.log(`Failed to connect to WebSocket: code: ${error?.code}, reason: ${error?.reason}`, error?.exception);
   }
 );
 ```
