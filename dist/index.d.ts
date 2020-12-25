@@ -8,7 +8,7 @@ export interface CordovaWebsocketErrorCallback {
     (error: CordovaWebsocketError): void;
 }
 export interface CordovaWebsocketEvent extends CordovaWebsocketError {
-    callbackMethod: string;
+    callbackMethod: 'onMessage' | 'onClose' | 'onFail';
     webSocketId: string;
     message: string;
 }
@@ -17,14 +17,14 @@ export interface CordovaWebsocketSuccess {
     code: number;
 }
 export interface CordovaWebsocketError extends CordovaWebsocketClose {
-    callbackMethod: string;
+    callbackMethod: 'onMessage' | 'onClose' | 'onFail';
     webSocketId: string;
     code: number;
     reason: string;
     exception?: string;
 }
 export interface CordovaWebsocketClose {
-    callbackMethod: string;
+    callbackMethod: 'onMessage' | 'onClose' | 'onFail';
     webSocketId: string;
     code: number;
     reason: string;
