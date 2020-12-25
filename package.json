@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-advanced-websocket-types",
+  "version": "0.0.1",
+  "description": "Types of cordova-plugin-advanced-websocket for Typescript/Ionic/Angular",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "source": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphrmx/cordova-plugin-advanced-websocket-types.git"
+  },
+  "keywords": [
+    "cordova-plugin-advanced-websocket",
+    "ionic",
+    "capacitor",
+    "react",
+    "websocket",
+    "cordova",
+    "plugin"
+  ],
+  "author": "RaphXyZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphrmx/cordova-plugin-advanced-websocket-types/issues"
+  },
+  "homepage": "https://github.com/raphrmx/cordova-plugin-advanced-websocket-types#readme"
+}
