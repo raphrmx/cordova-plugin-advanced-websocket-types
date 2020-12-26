@@ -38,9 +38,13 @@ export interface CordovaWebsocketOptions {
     };
     acceptAllCerts?: boolean;
 }
-export interface ICordovaWebsocketPlugin {
+export interface CordovaWebsocketPlugin {
     wsConnect(options: CordovaWebsocketOptions, receiveCallback?: CordovaWebsocketRecvEventCallback, successCallback?: CordovaWebsocketSuccessCallback, failureCallback?: CordovaWebsocketErrorCallback): void;
     wsSend(webSocketId: string, message: string): void;
     wsClose(webSocketId: string, code?: number, reason?: string): void;
 }
-export declare const CordovaWebsocketPlugin: ICordovaWebsocketPlugin;
+declare global {
+    interface Window {
+        CordovaWebsocketPlugin: CordovaWebsocketPlugin;
+    }
+}
