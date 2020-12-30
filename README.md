@@ -12,8 +12,7 @@ npm i --save-dev cordova-plugin-advanced-websocket-types
 
 ```typescript
 import {
-  CordovaWebsocketOptions,
-  CordovaWebsocketPlugin
+  CordovaWebsocketOptions
 } from 'cordova-plugin-advanced-websocket-types';
 
 const wsOptions: CordovaWebsocketOptions = {
@@ -24,7 +23,7 @@ const wsOptions: CordovaWebsocketOptions = {
   acceptAllCerts: false
 };
 
-CordovaWebsocketPlugin.wsConnect(
+window.CordovaWebsocketPlugin.wsConnect(
   wsOptions, 
   event => { // CordovaWebsocketEvent
     console.log(`Received callback from WebSocket: ${event?.callbackMethod}`);

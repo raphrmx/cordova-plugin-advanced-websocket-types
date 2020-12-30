@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-advanced-websocket-types",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Types of cordova-plugin-advanced-websocket for Typescript/Ionic/Angular",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
